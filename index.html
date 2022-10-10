@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            margin: 8px 10px;
+        }
+
+        h3 {
+            color: maroon;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        .container {
+            width: 550px;
+            height: 880px;
+            margin: 10px 650px;
+            justify-content: center;
+            border: 1px solid rgb(219, 219, 219);
+        }
+
+        .colored-top {
+            background-color: maroon;
+            height: 20px;
+            width: 100%
+        }
+
+        input,
+        select {
+            padding: 2px 8px;
+            margin-bottom: 6px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            width:90%;
+        }
+
+        label {
+            font-size: 8px;
+            display: block;
+        }
+
+        .btn {
+            background-color: maroon;
+            color: white;
+            padding: 13px 30px;
+            border: none;
+            margin: 10px 230px;
+        }
+
+        .row {
+            display: table;
+            margin-left: 15px;
+            margin-top: -27px;
+            display: table;
+        }
+
+
+        .col-left {
+            margin-top: -1px;
+            float: left;
+            width: 200px;
+        }
+
+        .col-right {
+            margin-top: 20px;
+            float: right;
+            width: 300px;
+            margin-left:30px;
+        }
+
+        .col50 {
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <Header>
+            <div class="colored-top"></div>
+            <h1>Job Application</h1>
+        </Header>
+        <h3>Personal Information</h3>
+        <form action="#" method="post">
+            <div class="row">
+                <div class="col-left">
+
+                    <h4>Name</h4>
+                </div>
+                <div class="col-right">
+
+                    <input type="text" id="fname" name="fname" style="width: 133px;">
+
+                    <input type="text" id="lname" name="lname" style="width: 133px;">
+                </div>
+            </div>
+
+
+
+    
+    <div class="row">
+        <div class="col-left">
+            <h4>Email</h4>
+        </div>
+        <div class="col-right">
+            <input type="email" id="email" name="email" placeholder="user@example.com">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Education</h4>
+        </div>
+        <div class="col-right">
+            <select name="education" id="education">
+                <option value="Matric" id="matric">Matric</option>
+                <option value="Inter" id="inter">Inter</option>
+                <option value="BS" id="bs">BS</option>
+                <option value="choose" id="choose" selected>Please Choose</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Resume</h4>
+        </div>
+        <div class="col-right">
+            <input type="file" id="resume" name="resume">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Address</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="address" name="address"><br>
+            <input type="text" id="address" name="address">
+            <select name="country" id="country">
+                <option value="pakistan" id="pakistan">Pakistan</option>
+                <option value="china" id="china" tyle="width: 190px;">China</option>
+                <option value="turkey" id="turkey" tyle="width: 70px;">Turkey</option>
+                <option value="select" id="select" tyle="width: 120px;" selected>Select a Country</option>
+            </select>
+            <input type="text" id="city" name="city" style="width: 130px;">
+            <input type="text" id="state" name="state" style="width: 40px;">
+            <input type="text" id="zipcode" name="zipcode" style="width: 90px;">
+
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Phone Number</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="countrycode" name="countrycode" style="width: 50px;">
+                <input type="text" id="number" name="number" style="width: 215px;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>What are your Hobbies?</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="hobbies" name="hobbies">
+        </div>
+    </div>
+    <h3>Precious/Current Employment Details</h3>
+
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Company Name</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="companyName" name="companyName">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Job Title</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="jobTitle" name="jobTitle">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>How long were you here?</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="experience" name="experience">
+        </div>
+    </div>
+    <h3>Reference #1</h3>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Name</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="referenceName" name="referenceName">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Phone</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="ref-phonenumber" name="ref-phonenumber">
+        </div>
+    </div>
+    <h3>Reference #1</h3>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Name</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="referenceName" name="referenceName">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+
+            <h4>Phone</h4>
+        </div>
+        <div class="col-right">
+            <input type="text" id="ref-phonenumber" name="ref-phonenumber">
+        </div>
+    </div>
+
+    <button class="btn">Apply</button>
+    </form>
+    </h3>
+    </div>
+
+</body>
+
+</html>
